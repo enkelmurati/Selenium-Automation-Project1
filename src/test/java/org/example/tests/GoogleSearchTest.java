@@ -30,7 +30,7 @@ public class GoogleSearchTest {
             googleSearchPage.enterSearchTerm("OpenAI");
             googleSearchPage.clickSearchButton();
 
-            // Përdorim WaitUtils për të pritur ngarkimin e faqeve
+
             WaitUtils.waitForElementToBeVisible(driver, driver.findElement(org.openqa.selenium.By.id("search")));
 
             String title = googleSearchPage.getPageTitle();

@@ -6,12 +6,11 @@ import org.openqa.selenium.WebDriver;
 public class LoginPage {
     private WebDriver driver;
 
-    // Lokatorët
+
     private By usernameField = By.id("username");
     private By passwordField = By.id("password");
     private By loginButton = By.id("login");
 
-    // Konstruktor
     public LoginPage(WebDriver driver) {
         this.driver = driver;
     }

@@ -30,7 +30,7 @@ public class LoginTest {
             loginPage.enterPassword("password123");
             loginPage.clickLogin();
 
-            String expectedUrl = "https://example.com/dashboard"; // Ndrysho URL me atë të vërtetën
+            String expectedUrl = "https://example.com/dashboard";
             Assert.assertEquals(driver.getCurrentUrl(), expectedUrl, "Login failed!");
 
         } catch (AssertionError e) {
